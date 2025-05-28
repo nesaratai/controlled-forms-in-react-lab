@@ -1,4 +1,16 @@
+import { useState } from 'react';
+
+
 const Bookshelf =() => {
+
+    // state to store the list of books
+  const [books, setBooks] = useState([]);
+
+     // state to store the input values for a new book
+  const [newBook, setNewBook] = useState({
+    title: '',
+    author: ''
+  });
 
 return (
 <div className="bookshelfDiv">
